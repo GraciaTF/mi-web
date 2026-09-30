@@ -721,3 +721,9 @@ z-index: -1;
 pointer-events: none;
 
 }
+
+/* MODO OSCURO -- TÍTULO DE LOS TEXTO ME GUSTA */
+
+.modo-oscuro #me-gusta h3 {
+color: var(--fucsia);
+}
