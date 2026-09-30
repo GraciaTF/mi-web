@@ -1,0 +1,721 @@
+/* =========================================================
+VARIABLES DE COLOR
+Aquí guardamos los colores principales de la web.
+Así podemos cambiarlos fácilmente más adelante.
+========================================================= */
+
+:root {
+--fucsia: #FF4FC3;
+--rosa-suave: #FFD6E8;
+--blanco: #FFFFFF;
+--gris: #9AA0A2;
+--negro-lila: #171827;
+}
+
+/* =========================================================
+ESTILOS GENERALES
+========================================================= */
+
+/* Hace que el tamaño de los elementos sea más fácil de controlar */
+
+* {
+  box-sizing: border-box;
+  }
+
+/* Desplazamiento suave cuando hacemos clic en los enlaces */
+html {
+scroll-behavior: smooth;
+}
+
+/* Estilos generales de la página */
+body {
+margin: 0;
+background-color: var(--blanco);
+color: var(--negro-lila);
+
+
+/* Tipografía sencilla y disponible en la mayoría de equipos */
+font-family: Arial, Helvetica, sans-serif;
+
+line-height: 1.7;
+
+
+}
+
+/* =========================================================
+TIPOGRAFÍA
+========================================================= */
+
+h1,
+h2,
+h3 {
+line-height: 1.2;
+}
+
+h1 {
+margin: 0;
+font-size: clamp(3rem, 8vw, 6rem);
+letter-spacing: -0.04em;
+}
+
+header h1 .apellidos {
+display: inline-block;
+
+
+margin-left: 0.15em;
+
+color: var(--fucsia);
+
+font-family: "Brush Script MT", "Segoe Script", cursive;
+
+font-size: 0.48em;
+font-weight: normal;
+letter-spacing: 0;
+
+
+}
+
+
+h2 {
+margin-top: 0;
+margin-bottom: 2rem;
+font-size: 2.2rem;
+}
+
+h3 {
+font-size: 1.3rem;
+margin-top: 0;
+}
+
+p {
+margin-top: 0;
+}
+
+/* =========================================================
+CABECERA
+========================================================= */
+
+header {
+min-height: 80vh;
+
+
+display: flex;
+align-items: center;
+
+background-color: var(--negro-lila);
+color: var(--blanco);
+
+padding: 5rem 2rem;
+
+position: relative;
+
+
+}
+
+/* Línea decorativa fucsia en la parte superior */
+header::before {
+content: "";
+position: absolute;
+
+
+top: 0;
+left: 0;
+
+width: 100%;
+height: 4px;
+
+background-color: var(--fucsia);
+
+
+}
+
+header > div {
+width: 100%;
+max-width: 900px;
+margin: 0 auto;
+}
+
+/* Nombre */
+header h1 {
+color: var(--blanco);
+}
+/* FRase principal */
+header h1 + p {
+font-size: 1.4rem;
+font-weight: bold;
+margin: 1.5rem 0 1rem;
+background: linear-gradient(90deg, var(--fucsia), var(--rosa-suave), var(--fucsia));
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+color: transparent;
+}
+
+
+/* Descripción */
+header h1 + p + p {
+max-width: 650px;
+color: #E8E8EC;
+font-size: 1.1rem;
+}
+
+/* =========================================================
+ENLACES Y BOTONES DE LA CABECERA
+========================================================= */
+
+header a {
+display: inline-block;
+
+
+margin-top: 1.5rem;
+margin-right: 0.75rem;
+
+padding: 0.8rem 1.4rem;
+
+border: 1px solid var(--fucsia);
+border-radius: 50px;
+
+color: var(--blanco);
+text-decoration: none;
+
+transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+
+
+}
+
+/* Primer botón */
+header a:first-of-type {
+background-color: var(--fucsia);
+color: var(--negro-lila);
+}
+
+/* Efecto al pasar el ratón */
+header a:hover {
+background-color: var(--fucsia);
+color: var(--negro-lila);
+transform: translateY(-2px);
+}
+
+/* =========================================================
+CONTENIDO PRINCIPAL
+========================================================= */
+
+main {
+width: min(90%, 900px);
+margin: 0 auto;
+}
+
+/* Todas las secciones principales */
+section {
+padding: 6rem 0;
+
+
+border-bottom: 1px solid var(--rosa-suave);
+
+
+}
+
+/* Pequeño detalle fucsia antes de los títulos */
+section h2::before {
+content: "— ";
+color: var(--fucsia);
+}
+
+/* =========================================================
+SOBRE MÍ
+========================================================= */
+
+#sobre-mi {
+max-width: 750px;
+}
+
+/* =========================================================
+LO QUE HE HECHO
+========================================================= */
+
+#proyectos article {
+padding: 2rem 0;
+
+
+border-top: 1px solid #E5E5E7;
+
+
+}
+
+#proyectos article:first-of-type {
+border-top: none;
+}
+
+#proyectos h3 {
+color: var(--fucsia);
+}
+
+/* =========================================================
+CITA
+========================================================= */
+blockquote {
+font-family: "Courier New", Courier, monospace;
+font-weight: 2000;
+font-size: 1.15rem;
+letter-spacing: 0.03em;
+line-height: 1.6;
+margin: 2rem 0;
+padding: 1.5rem 2rem;
+border-left: 3px solid var(--fucsia);
+background-color: rgba(255, 214, 232, 0.55);
+
+
+}
+/* =========================================================
+ME GUSTA
+========================================================= */
+
+/*
+En ordenador utilizamos dos columnas.
+Cada article ocupa una de las columnas.
+*/
+
+#me-gusta {
+display: grid;
+
+
+grid-template-columns: repeat(2, 1fr);
+
+gap: 1.5rem;
+
+
+}
+
+#me-gusta h2 {
+grid-column: 1 / -1;
+margin-bottom: 0;
+}
+
+/* Cada interés funciona como una pequeña tarjeta */
+#me-gusta article {
+padding: 2rem;
+
+
+border: 1px solid var(--rosa-suave);
+border-radius: 12px;
+
+background-color: #FFF9FC;
+
+transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+
+}
+
+/* Efecto al pasar el ratón por las tarjetas */
+#me-gusta article:hover {
+transform: translateY(-4px);
+
+
+border-color: var(--fucsia);
+
+box-shadow: 0 10px 30px rgba(255, 79, 195, 0.12);
+
+
+}
+
+#me-gusta h3 {
+color: var(--negro-lila);
+}
+
+/* =========================================================
+PIE DE PÁGINA / CONTACTO
+========================================================= */
+
+footer {
+background-color: var(--negro-lila);
+color: var(--blanco);
+
+
+padding: 2rem 2rem;
+
+text-align: center;
+
+
+}
+
+footer h2 {
+color: var(--blanco);
+}
+
+footer p {
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+footer a {
+color: var(--fucsia);
+text-decoration: none;
+
+
+border-bottom: 1px solid transparent;
+
+transition: border-color 0.3s ease;
+
+
+}
+
+footer a:hover {
+border-bottom-color: var(--fucsia);
+}
+
+footer p:last-child {
+margin-top: 1.5rem;
+
+
+color: var(--gris);
+
+font-size: 0.9rem;
+
+
+}
+
+/* =========================================================
+RESPONSIVE: MÓVILES
+========================================================= */
+
+/*
+Cuando la pantalla es pequeña, las dos columnas de
+"Me gusta" pasan a convertirse en una sola.
+*/
+
+@media (max-width: 700px) {
+
+
+header {
+    min-height: 90vh;
+    padding: 4rem 1.5rem;
+}
+
+header a {
+    display: block;
+    width: fit-content;
+    margin-right: 0;
+}
+
+main {
+    width: min(90%, 600px);
+}
+
+section {
+    padding: 4rem 0;
+}
+
+#me-gusta {
+    grid-template-columns: 1fr;
+}
+
+#me-gusta h2 {
+    grid-column: auto;
+}
+
+footer {
+    padding: 4rem 1.5rem;
+}
+
+
+}
+/* =========================================================
+BOTÓN DE MODO OSCURO
+========================================================= */
+
+#boton-tema {
+display: inline-block;
+
+
+margin-top: 1.5rem;
+padding: 0.8rem 1.4rem;
+
+border: 1px solid var(--fucsia);
+border-radius: 50px;
+
+background-color: transparent;
+color: var(--blanco);
+
+font-family: inherit;
+font-size: 1rem;
+
+cursor: pointer;
+
+transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+
+}
+
+#boton-tema:hover {
+background-color: var(--fucsia);
+color: var(--negro-lila);
+}
+
+/* =========================================================
+MODO OSCURO
+========================================================= */
+
+/*
+Cuando JavaScript añade la clase "modo-oscuro"
+al body, estas variables cambian de valor.
+*/
+/* =========================================================
+MODO OSCURO
+========================================================= */
+
+/*
+En modo oscuro cambiamos únicamente los colores
+del contenido principal.
+
+El header y el footer mantienen su diseño original.
+*/
+
+body.modo-oscuro {
+background-color: #171827;
+color: #FFFFFF;
+}
+
+/* Secciones del contenido */
+body.modo-oscuro section {
+border-bottom-color: #3A3342;
+}
+
+/* Tarjetas de "Me gusta" */
+body.modo-oscuro #me-gusta article {
+background-color: #211E2D;
+border-color: #4A3A4B;
+}
+
+/* Títulos del contenido */
+body.modo-oscuro main h2,
+body.modo-oscuro main h3 {
+color: #FFFFFF;
+}
+
+/* Texto secundario */
+body.modo-oscuro main p {
+color: #E8E8EC;
+}
+
+/* Cita */
+body.modo-oscuro blockquote {
+background-color: #2A2030;
+}
+
+/*
+El header y el footer NO necesitan reglas
+especiales porque ya tienen su propio fondo oscuro.
+*/
+
+
+/* Fondo de las tarjetas en modo oscuro */
+body.modo-oscuro #me-gusta article {
+background-color: #211E2D;
+border-color: #4A3A4B;
+}
+
+/* Líneas de las secciones en modo oscuro */
+body.modo-oscuro section {
+border-bottom-color: #3A3342;
+}
+
+/* =========================================================
+SOBRE MÍ: TEXTO + IMAGEN
+========================================================= */
+
+/*
+Colocamos el texto y la imagen en dos columnas.
+*/
+.sobre-mi-contenido {
+display: grid;
+
+
+grid-template-columns: 1fr 1fr;
+
+gap: 4rem;
+
+align-items: center;
+
+
+}
+
+/* El texto ocupa una de las columnas */
+.sobre-mi-texto {
+max-width: 100%;
+}
+
+/* Contenedor de la imagen */
+.sobre-mi-imagen {
+width: 100%;
+}
+
+/* Imagen de programación */
+.sobre-mi-imagen img {
+display: block;
+
+
+width: 100%;
+height: auto;
+
+border-radius: 24px;
+
+object-fit: cover;
+
+
+}
+
+/* =========================================================
+SOBRE MÍ EN MÓVIL
+========================================================= */
+
+/*
+En pantallas pequeñas dejamos una sola columna.
+La imagen pasa debajo del texto.
+*/
+@media (max-width: 700px) {
+
+
+.sobre-mi-contenido {
+    grid-template-columns: 1fr;
+
+    gap: 2.5rem;
+}
+
+.sobre-mi-imagen img {
+    border-radius: 20px;
+}
+
+
+
+
+
+
+}
+
+.boton-arriba {
+
+position: fixed;
+
+right: 2rem;
+
+bottom: 2rem;
+
+width: 55px;
+
+height: 55px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+z-index: 1000;
+
+text-decoration: none;
+
+}
+
+.boton-arriba img {
+
+display: block;
+
+width: 6em;
+
+height: 6em;
+
+object-fit: contain;
+
+transition: transform 0.3s ease;
+
+}
+
+.boton-arriba:hover img {
+
+transform: translateY(-4px);
+
+}
+
+.boton-arriba:hover img {
+transform: translateY(-4px);
+}
+
+/* ESTILO ICONOS */
+.iconos-contacto {
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+gap: 1.5rem;
+
+margin-top: 2rem;
+
+}
+
+.icono-contacto {
+
+display: block;
+
+width: 5em;
+
+height: 5em;
+
+border: none;
+
+}
+
+.icono-contacto img {
+
+display: block;
+
+width: 100%;
+
+height: 100%;
+
+object-fit: contain;
+
+transition: transform 0.3s ease;
+
+}
+
+.icono-contacto:hover img {
+
+transform: translateY(-4px);
+
+}
+.programming-final {
+font-weight: 900;
+font-size: 1.25rem;
+color: var(--fucsia);
+}
+
+/* FONDO PARTICULAS */
+#particulas {
+
+position: fixed;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100%;
+
+z-index: -1;
+
+pointer-events: none;
+
+}
