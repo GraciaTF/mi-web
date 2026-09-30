@@ -541,7 +541,7 @@ display: grid;
 
 grid-template-columns: 1fr 1fr;
 
-gap: 4rem;
+gap: 2rem;
 
 align-items: center;
 
@@ -571,6 +571,7 @@ border-radius: 24px;
 object-fit: cover;
 
 
+
 }
 
 /* =========================================================
@@ -592,6 +593,7 @@ La imagen pasa debajo del texto.
 
 .sobre-mi-imagen img {
     border-radius: 20px;
+
 }
 
 
