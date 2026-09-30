@@ -5,11 +5,15 @@ Así podemos cambiarlos fácilmente más adelante.
 ========================================================= */
 
 :root {
---fucsia: #FF4FC3;
---rosa-suave: #FFD6E8;
---blanco: #FFFFFF;
---gris: #9AA0A2;
---negro-lila: #171827;
+--fucsia: #FF1493;
+--rosa-suave: #FFB3C6;
+--blanco: #FFF8F5;
+--gris: #C9A9B5;
+--negro-lila: #241116;
+--lila: #C77DFF;
+--fresa: #FF4D6D;
+--melocoton: #FF9F68;
+--sandia: #FF6B6B;
 }
 
 /* =========================================================
@@ -64,7 +68,7 @@ display: inline-block;
 
 margin-left: 0.15em;
 
-color: var(--fucsia);
+color: var(--lila);
 
 font-family: "Brush Script MT", "Segoe Script", cursive;
 
@@ -144,7 +148,7 @@ header h1 + p {
 font-size: 1.4rem;
 font-weight: bold;
 margin: 1.5rem 0 1rem;
-background: linear-gradient(90deg, var(--fucsia), var(--rosa-suave), var(--fucsia));
+background: linear-gradient(90deg, var(--fucsia), var(--fresa), var(--melocoton));
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -189,13 +193,16 @@ transition:
 /* Primer botón */
 header a:first-of-type {
 background-color: var(--fucsia);
+
 color: var(--negro-lila);
 }
 
 /* Efecto al pasar el ratón */
 header a:hover {
-background-color: var(--fucsia);
+background-color: var(--melocoton);
+
 color: var(--negro-lila);
+
 transform: translateY(-2px);
 }
 
@@ -250,7 +257,7 @@ border-top: none;
 }
 
 #proyectos h3 {
-color: var(--fucsia);
+color: var(--fresa);
 }
 
 /* =========================================================
@@ -264,8 +271,8 @@ letter-spacing: 0.03em;
 line-height: 1.6;
 margin: 2rem 0;
 padding: 1.5rem 2rem;
-border-left: 3px solid var(--fucsia);
-background-color: rgba(255, 214, 232, 0.55);
+border-left: 4px solid var(--fresa);
+background-color: rgba(255, 159, 104, 0.18);
 
 
 }
@@ -299,10 +306,10 @@ margin-bottom: 0;
 padding: 2rem;
 
 
-border: 1px solid var(--rosa-suave);
+border: 2px solid var(--rosa-suave);
 border-radius: 12px;
 
-background-color: #FFF9FC;
+background: linear-gradient(135deg, #FFF0F3, #FFE1D1);
 
 transition:
     transform 0.3s ease,
@@ -314,18 +321,19 @@ transition:
 
 /* Efecto al pasar el ratón por las tarjetas */
 #me-gusta article:hover {
-transform: translateY(-4px);
-
+transform: translateY(-6px);
 
 border-color: var(--fucsia);
 
-box-shadow: 0 10px 30px rgba(255, 79, 195, 0.12);
+box-shadow: 0 12px 30px rgba(255, 20, 147, 0.22);
 
 
 }
 
 #me-gusta h3 {
-color: var(--negro-lila);
+color: var(--fucsia);
+
+font-weight: 800;
 }
 
 /* =========================================================
@@ -480,8 +488,9 @@ El header y el footer mantienen su diseño original.
 */
 
 body.modo-oscuro {
-background-color: #171827;
-color: #FFFFFF;
+background-color: #241116;
+
+color: #FFF8F5;
 }
 
 /* Secciones del contenido */
@@ -491,24 +500,38 @@ border-bottom-color: #3A3342;
 
 /* Tarjetas de "Me gusta" */
 body.modo-oscuro #me-gusta article {
-background-color: #211E2D;
-border-color: #4A3A4B;
+background-color: #351820;
+
+border-color: #FF6B8A;
+}
+
+body.modo-oscuro #me-gusta article p {
+
+color: #FFE9EF;
+
+}
+
+body.modo-oscuro #me-gusta article h3 {
+
+color: var(--lila);
+
 }
 
 /* Títulos del contenido */
 body.modo-oscuro main h2,
 body.modo-oscuro main h3 {
-color: #FFFFFF;
+color: var(--lila);
 }
 
 /* Texto secundario */
 body.modo-oscuro main p {
-color: #E8E8EC;
+color: #FFE9EF;
 }
 
 /* Cita */
 body.modo-oscuro blockquote {
-background-color: #2A2030;
+background-color: rgba(255, 107, 107, 0.12);
+border-left-color: var(--fresa);
 }
 
 /*
@@ -519,8 +542,9 @@ especiales porque ya tienen su propio fondo oscuro.
 
 /* Fondo de las tarjetas en modo oscuro */
 body.modo-oscuro #me-gusta article {
-background-color: #211E2D;
-border-color: #4A3A4B;
+background: #351820;
+
+border-color: #FF6B8A;
 }
 
 /* Líneas de las secciones en modo oscuro */
