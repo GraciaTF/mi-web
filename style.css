@@ -68,7 +68,7 @@ color: var(--fucsia);
 
 font-family: "Brush Script MT", "Segoe Script", cursive;
 
-font-size: 0.48em;
+font-size: 0.65em;
 font-weight: normal;
 letter-spacing: 0;
 
@@ -186,11 +186,11 @@ transition:
 
 }
 
-/* Primer botón */
+/*  Primer botón 
 header a:first-of-type {
 background-color: var(--fucsia);
 color: var(--negro-lila);
-}
+} */
 
 /* Efecto al pasar el ratón */
 header a:hover {
@@ -352,6 +352,7 @@ footer p {
 max-width: 600px;
 margin-left: auto;
 margin-right: auto;
+font-style: italic;
 }
 
 footer a {
@@ -727,3 +728,4 @@ pointer-events: none;
 .modo-oscuro #me-gusta h3 {
 color: var(--fucsia);
 }
+
