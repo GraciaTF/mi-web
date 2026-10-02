@@ -7,13 +7,13 @@ Así podemos cambiarlos fácilmente más adelante.
 :root {
 --fucsia: #FF1493;
 --rosa-suave: #FFB3C6;
---blanco: #FFF8F5;
---gris: #C9A9B5;
+--blanco: #775c51;
+--gris: #db4e82;
 --negro-lila: #241116;
---lila: #C77DFF;
+--lila: #8d06f4;
 --fresa: #FF4D6D;
---melocoton: #FF9F68;
---sandia: #FF6B6B;
+--melocoton: #df5b0e;
+--sandia: #fa0b0b;
 }
 
 /* =========================================================
@@ -28,7 +28,7 @@ ESTILOS GENERALES
 
 /* Desplazamiento suave cuando hacemos clic en los enlaces */
 html {
-scroll-behavior: smooth;
+scroll-behavior: auto;
 }
 
 /* Estilos generales de la página */
@@ -39,9 +39,9 @@ color: var(--negro-lila);
 
 
 /* Tipografía sencilla y disponible en la mayoría de equipos */
-font-family: Arial, Helvetica, sans-serif;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-line-height: 1.7;
+line-height: 3.4;
 
 
 }
@@ -53,13 +53,13 @@ TIPOGRAFÍA
 h1,
 h2,
 h3 {
-line-height: 1.2;
+line-height: 1.8;
 }
 
 h1 {
 margin: 0;
 font-size: clamp(3rem, 8vw, 6rem);
-letter-spacing: -0.04em;
+letter-spacing: -0.1em;
 }
 
 header h1 .apellidos {
