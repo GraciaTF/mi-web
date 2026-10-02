@@ -39,4 +39,9 @@ Aquí la cosa se ha puesto interesante para mí porque me he dado cuenta de que 
 
 He desecho el merge y la IA me ha sugerido usar Cherry pick para fusionar en la rama que sí quiero conservar (main) con el commit que guardaba esos cambios.
 
+MERGE REAL
+Creo una tercera rama para probar a hacer un merge con la de main. Modifico el tamaño de los apellidos y también dejo comentado una parte del código css que hace referencia al primer botón (ver proyectos) para que funcione solo el hover, exactamente igual que en los demás (si no, se veía ya rosado como seleccionado desde que cargabas la página).
+Por último, he modificado el footer a cursiva.
+
+
 --FIN SESIÓN 1 Y 2--
