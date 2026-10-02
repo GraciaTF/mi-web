@@ -324,9 +324,6 @@ box-shadow: 0 10px 30px rgba(255, 79, 195, 0.12);
 
 }
 
-#me-gusta h3 {
-color: var(--negro-lila);
-}
 
 /* =========================================================
 PIE DE PÁGINA / CONTACTO
@@ -518,6 +515,10 @@ background-color: #2A2030;
 El header y el footer NO necesitan reglas
 especiales porque ya tienen su propio fondo oscuro.
 */
+
+.modo-oscuro .habilidad {
+    background-color: var(--negro-lila);
+}
 
 
 /* Fondo de las tarjetas en modo oscuro */
@@ -914,4 +915,101 @@ color: var(--fucsia);
     margin-top: 1rem;
     text-align: center;
     color: var(--fucsia);
+}
+
+
+/* =========================
+HABILIDADES
+========================= */
+
+#habilidades {
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+
+.intro-habilidades {
+    max-width: 650px;
+    margin: 0 auto 2.5rem auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.contenedor-habilidades {
+max-width: 1000px;
+margin: 0 auto;
+
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+
+
+}
+.habilidad {
+padding: 1.5rem;
+
+
+border: 1px solid var(--rosa-suave);
+border-radius: 12px;
+
+background-color: #FFF9FC;
+
+transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+
+}
+
+.habilidad:hover {
+transform: translateY(-5px);
+
+
+border-color: var(--fucsia);
+
+box-shadow: 0 10px 30px rgba(255, 79, 195, 0.12);
+
+
+}
+
+#me-gusta h3,
+.habilidad h3 {
+    color: var(--fucsia) !important ;
+}
+
+.habilidad p {
+color: var(--negro);
+line-height: 1.6;
+margin: 0;
+}
+
+
+/* =========================
+HABILIDADES EN MÓVIL
+========================= */
+
+@media (max-width: 800px) {
+
+
+.contenedor-habilidades {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media (max-width: 600px) {
+
+
+#habilidades {
+    padding: 3rem 1rem;
+}
+
+.contenedor-habilidades {
+    grid-template-columns: 1fr;
+}
+
+
 }

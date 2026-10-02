@@ -47,5 +47,8 @@ MEJORAS SEGÚN RÚBRICA:
 -He creado un formulario de contacto (aunque he decidido mantener debajo también los enlaces que llevan a mi correo, GitHub y LinkedIn).
 -Para hacerlo funcionar, he usado Formspree (recomendado por la IA) y he conseguido que funcione, he recibido las submissions que he hecho de prueba. También ha modificado el mensaje de "mensaje enviado".
 
+-He mejorado los textos para personalizarlos más, y he añadido un apartado con mis habilidades y tecnologías que conozco.
+
+
 
 --FIN SESIÓN 1 Y 2--
