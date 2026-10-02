@@ -49,6 +49,10 @@ MEJORAS SEGÚN RÚBRICA:
 
 -He mejorado los textos para personalizarlos más, y he añadido un apartado con mis habilidades y tecnologías que conozco.
 
+-He creado una página llamada proyectos.html y he metido ahí la información sobre mis proyectos. En realidad tengo poca cosa, no he hecho mucho así que solo he subido un par de cosas. Le he pedido a la IA que me preparase la página con el mismo header y footer.
+
+-He añadido capturas de mis proyectos en la página de proyectos. He añadido código al script.js para conseguir que al hacer click en cada imagen se amplíe.
+
 
 
 --FIN SESIÓN 1 Y 2--

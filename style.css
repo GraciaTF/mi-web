@@ -1013,3 +1013,195 @@ HABILIDADES EN MÓVIL
 
 
 }
+
+
+/* =========================================================
+   PÁGINA DE PROYECTOS
+   ========================================================= */
+
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#proyectos > h2 {
+    margin-bottom: 0;
+}
+
+#proyectos > p {
+    max-width: 700px;
+}
+
+
+/* Tarjetas de cada proyecto */
+
+.proyecto {
+    padding: 2rem !important;
+
+    border: 1px solid var(--rosa-suave);
+    border-radius: 12px;
+
+    background-color: #FFF9FC;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--fucsia);
+
+    box-shadow: 0 10px 30px rgba(255, 79, 195, 0.12);
+}
+
+
+/* Título del proyecto */
+
+.proyecto h3 {
+    color: var(--fucsia);
+    margin-bottom: 1rem;
+}
+
+
+/* Texto del proyecto */
+
+.proyecto p {
+    color: var(--negro-lila);
+    line-height: 1.7;
+}
+
+
+/* Capturas */
+
+.medios-proyecto {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+.medios-proyecto img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--rosa-suave);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.medios-proyecto img:hover {
+    transform: scale(1.02);
+
+    border-color: var(--fucsia);
+}
+
+
+/* =========================================================
+   PROYECTOS - MODO OSCURO
+   ========================================================= */
+
+.modo-oscuro .proyecto {
+    background-color: var(--negro-lila);
+}
+
+.modo-oscuro .proyecto p {
+    color: var(--blanco);
+}
+
+
+/* =========================================================
+   PROYECTOS - MÓVIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .medios-proyecto {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto {
+        padding: 1.5rem !important;
+    }
+}
+
+.imagen-proyecto {
+    cursor: pointer;
+}
+
+/* =========================================================
+   VISOR DE IMÁGENES
+   ========================================================= */
+
+.visor-imagen {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+
+    cursor: pointer;
+}
+
+.visor-imagen.activo {
+    display: flex;
+}
+
+#imagen-ampliada {
+    max-width: 90%;
+    max-height: 90vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+    cursor: default;
+}
+
+#cerrar-imagen {
+    position: absolute;
+
+    top: 1.5rem;
+    right: 2rem;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--blanco);
+
+    font-size: 2.5rem;
+
+    cursor: pointer;
+
+    line-height: 1;
+
+    z-index: 1001;
+}
+
+#cerrar-imagen:hover {
+    color: var(--fucsia);
+}

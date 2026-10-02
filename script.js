@@ -111,3 +111,53 @@ dibujarParticulas();
 
 
 }
+
+
+/* =========================================================
+   VISOR DE IMÁGENES DE PROYECTOS
+   ========================================================= */
+
+const imagenesProyecto = document.querySelectorAll(".imagen-proyecto");
+
+const visorImagen = document.getElementById("visor-imagen");
+
+const imagenAmpliada = document.getElementById("imagen-ampliada");
+
+const cerrarImagen = document.getElementById("cerrar-imagen");
+
+
+if (visorImagen && imagenAmpliada && cerrarImagen) {
+
+    imagenesProyecto.forEach(function (imagen) {
+
+        imagen.addEventListener("click", function () {
+
+            imagenAmpliada.src = imagen.src;
+
+            imagenAmpliada.alt = imagen.alt;
+
+            visorImagen.classList.add("activo");
+
+        });
+
+    });
+
+
+    cerrarImagen.addEventListener("click", function () {
+
+        visorImagen.classList.remove("activo");
+
+    });
+
+
+    visorImagen.addEventListener("click", function (evento) {
+
+        if (evento.target === visorImagen) {
+
+            visorImagen.classList.remove("activo");
+
+        }
+
+    });
+
+}

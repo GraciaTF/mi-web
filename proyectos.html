@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Proyectos | Gracia</title>
+
+<!-- Hoja de estilos externa -->
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<a href="#inicio" class="boton-arriba" aria-label="Volver al inicio">
+    <img src="images/flecharosa.png" alt="Volver al inicio">
+</a>
+
+<canvas id="particulas"></canvas>
+
+
+<!-- CABECERA -->
+
+<header id="inicio">
+
+    <div>
+
+        <h1>
+            Gracia <span class="apellidos">Tortajada Ferris</span>
+        </h1>
+
+        <p>
+            Si tienes miedo, hazlo con miedo.
+        </p>
+
+        <p>
+            Estudiante de Desarrollo de Aplicaciones Multiplataforma,
+            descubriendo el mundo de la programación.
+        </p>
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="proyectos.html" class="activo">
+            Ver proyectos
+        </a>
+
+        <a href="contacto.html">
+            Contactar
+        </a>
+
+        <!-- Botón para cambiar entre modo claro y modo oscuro -->
+
+        <button id="boton-tema" type="button">
+            ☾ Modo oscuro
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+
+<main>
+
+    <!-- INTRODUCCIÓN -->
+
+    <section id="proyectos">
+
+        <h2>Proyectos</h2>
+
+        <p>
+            Una selección de proyectos que he realizado durante mi
+            formación y de proyectos personales.
+        </p>
+
+
+        <!-- PROYECTO 1 -->
+
+        <article class="proyecto">
+
+            <h3>Proyecto académico · Lenguaje de Marcas</h3>
+
+            <p>
+                Uno de los proyectos que realicé durante mi formación
+                en Lenguaje de Marcas, donde trabajé con HTML y CSS
+                para crear y estructurar una página web. Posteriormente 
+                le añadí algunas interacciones usando JavaScript.
+            </p>
+
+            <p>
+                Este proyecto me permitió practicar la estructura
+                de una página web, los estilos y la organización
+                del contenido. Aunque tiene una apariencia peculiar, puesto que 
+                al ser un ejercicio tenía que utilizar determinados recursos de forma 
+                obligatoria y algunos de ellos están bastante forzados, fue un modo práctico de 
+                ir integrando los diferentes aprendizajes a lo largo del curso.
+            </p>
+        <div class="medios-proyecto">
+
+            <img src="images/captura1p1.png"
+                alt="Captura del proyecto de Lenguaje de Marcas"
+                class="imagen-proyecto">
+
+            <img src="images/captura2p1.png"
+                alt="Segunda captura del proyecto de Lenguaje de Marcas"
+                class="imagen-proyecto">
+
+        </div>
+
+        </article>
+
+        <!-- PROYECTO 2 -->
+
+<article class="proyecto">
+
+
+<h3>Proyecto académico · Sistema de bibliotecas en Java</h3>
+
+<p>
+    Proyecto realizado durante mi formación autodidacta en Java
+    mediante el MOOC de Java de la Universidad de Helsinki.
+</p>
+
+<p>
+    En este proyecto trabajé conceptos de programación orientada
+    a objetos creando diferentes tipos de bibliotecas y definiendo
+    comportamientos distintos para cada una. Quise hacerlo como actividad extra 
+    complementaria a las propuestas por el propio MOOC para poder consolidar los aprendizajes y 
+    coger un poco de experiencia práctica.
+</p>
+
+<p>
+    El programa incluye una biblioteca con un límite máximo de
+    páginas, una biblioteca que solo permite almacenar un libro
+    y una biblioteca sin límite específico. También trabajé la
+    comparación de objetos mediante <code>equals()</code> y
+    <code>hashCode()</code>.
+</p>
+
+<div class="medios-proyecto">
+
+    <img src="images/captura1p2.png"
+         alt="Código del proyecto de bibliotecas desarrollado en Java"
+         class="imagen-proyecto">
+
+    <img src="images/captura2p2.png"
+         alt="Código del proyecto de bibliotecas desarrollado en Java"
+         class="imagen-proyecto">
+
+</div>
+
+</article>
+
+
+
+        <!-- PROYECTO 3 -->
+
+        <article class="proyecto">
+
+            <h3>Mi web personal · 2026</h3>
+
+            <p>
+                Este página constituye mi tercer proyecto personal. Consiste en la creación de una web
+                de presentación y poner en práctica los conocimientos
+                que estoy adquiriendo en Desarrollo de Aplicaciones
+                Multiplataforma.
+            </p>
+
+            <p>
+                Durante su desarrollo he trabajado con HTML, CSS,
+                JavaScript y Git/GitHub, realizando diferentes
+                iteraciones y cambios de diseño hasta llegar a
+                la versión actual, apoyándome del uso de la IA.
+            </p>
+
+            <!-- Aquí añadiremos posteriormente imágenes y una demo -->
+
+                <div class="medios-proyecto">
+
+            <img src="images/captura1p3.png"
+                alt="Página principal de la web personal de Gracia"
+                class="imagen-proyecto">
+
+            <img src="images/captura2p3.png"
+                alt="Formulario de contacto de la web personal"
+                class="imagen-proyecto">
+
+        </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+
+<!-- PIE DE PÁGINA Y CONTACTO -->
+
+<footer id="contacto">
+
+    <h2>También puedes encontrarme aquí:</h2>
+
+    <div class="iconos-contacto">
+
+        <a href="mailto:graciatortajadaferris@gmail.com"
+           class="icono-contacto"
+           aria-label="Enviar correo">
+
+            <img src="images/correorosa.png"
+                 alt="Correo electrónico">
+
+        </a>
+
+
+        <a href="https://github.com/GraciaTF"
+           class="icono-contacto"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub de Gracia">
+
+            <img src="images/githubrosa.png"
+                 alt="GitHub">
+
+        </a>
+
+
+        <a href="https://www.linkedin.com/in/gracia-tortajada-48872050/"
+           class="icono-contacto"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn de Gracia">
+
+            <img src="images/linkedinrosa.png"
+                 alt="LinkedIn">
+
+        </a>
+
+    </div>
+
+    <p>
+        Gracia · 2026
+    </p>
+
+</footer>
+
+<!-- VENTANA PARA AMPLIAR IMÁGENES -->
+
+<div id="visor-imagen" class="visor-imagen">
+
+    <button id="cerrar-imagen"
+            type="button"
+            aria-label="Cerrar imagen">
+        ×
+    </button>
+
+    <img id="imagen-ampliada"
+         src=""
+         alt="">
+
+</div>
+
+<!-- Enlace al archivo JS -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
