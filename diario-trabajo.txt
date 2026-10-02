@@ -1,0 +1,42 @@
+SESIÓN 1 y SESIÓN 2: 
+
+Primero le explico algunas cosas sobre mí a la IA, medio respondiendo las preguntas planteadas y le pido que me cree la web. Le doy la paleta de colores (escojo una que me gusta en internet) y le explico el estilo que busco (un poco tech pero femenino).
+
+Me hace la primera propuesta y decido incluir también los apellidos junto con mi nombre pero con otra tipografía y estilo manuscrito. Le pido a la IA que me diga cómo modificar el HTML y css.
+
+Al crearme el modo oscuro, la parte del header y del footer se veía el fondo blanco y no me gustaba, le he sugerido un cambio de color. Finalmente se ve todo bastante oscuro en el modo oscuro.
+
+3 iteraciones:
+1a Iteración: en la sección "Sobre mí", añade una foto relacionada con la programación pero que sea femenina y que la frase de cabecera use un degradado de mis colores. No cambies nada más.
+Vale, no quiero cambios en las tipografías ni en la frase, solo lo del degradado de colores. Sobre la imagen, que sea más tech, más formal, preferiría que no se viese ninguna persona, pero me gusta lo que has hecho con los colores.
+Luego le pido que me diga cómo modificar el código para incluir la imagen y ajusto manualmente el padding y el tamaño.
+
+
+2a iteración: Añade una flecha hacia arriba que presiones y te lleve arriba. La imagen de la flecha créala tú, que vaya en línea con el diseño de la página, y los colores.
+He introducido las modificaciones.
+
+3a iteración: 
+Me encanta el estilo de la flecha, podrías hacerme unos logos de ese estilo con mi paleta de colores para poner junto con mi email, LinkedIn y GitHub? 
+
+4a iteración:
+El texto ese de I hate programming, I hate programming etc, me gustaría que tuviese una tipografía más estilo "ordenador", no sé, más llamativa y la letra más gruesa.
+Modificación introducida.
+
+
+
+--Commit 2 : cambio tamaño imagen
+
+--Commit 3: títulos más oscuros
+
+
+CREACIÓN DE UNA SEGUNDA RAMA
+La segunda rama que he creado ha sido como un cambio de estilo, con unos colores más enérgicos.
+Sin embargo, luego, para probar a romper algo y volver atrás, he cambiado los colores, los tamaños, el espacio entre caracteres, y por último he quitado divs en el HTML y he cambiado algunos h1, h2, etc por párrafos. Después de "romperlo", he vuelto a un commit anterior con revert.
+
+Después he escogido con que rama quiero seguir trabajando, en mi caso con la primera desarrollada. Esa rama ya estaba en main así que pare probar a fusionar alguna cosa, solo he modificado algunos textos en mi segunda rama. Esa modificación sí la quiero conservar.
+
+Aquí la cosa se ha puesto interesante para mí porque me he dado cuenta de que con un merge se cambiaba absolutamente todo lo que había cambiado, y en realidad yo solo quería conservar los cambios hechos en el texto puesto que los colores iniciales y la tipografía me gustaban más.
+
+He desecho el merge y la IA me ha sugerido usar Cherry pick para fusionar en la rama que sí quiero conservar (main) con el commit que guardaba esos cambios.
+
+--FIN SESIÓN 1 Y 2--
