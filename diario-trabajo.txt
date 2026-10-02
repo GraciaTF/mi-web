@@ -43,5 +43,9 @@ MERGE REAL
 Creo una tercera rama para probar a hacer un merge con la de main. Modifico el tamaño de los apellidos y también dejo comentado una parte del código css que hace referencia al primer botón (ver proyectos) para que funcione solo el hover, exactamente igual que en los demás (si no, se veía ya rosado como seleccionado desde que cargabas la página).
 Por último, he modificado el footer a cursiva.
 
+MEJORAS SEGÚN RÚBRICA:
+-He creado un formulario de contacto (aunque he decidido mantener debajo también los enlaces que llevan a mi correo, GitHub y LinkedIn).
+-Para hacerlo funcionar, he usado Formspree (recomendado por la IA) y he conseguido que funcione, he recibido las submissions que he hecho de prueba. También ha modificado el mensaje de "mensaje enviado".
+
 
 --FIN SESIÓN 1 Y 2--

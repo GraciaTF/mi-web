@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
 
 <title>Contacto | Gracia - Desarrollo de Aplicaciones</title>
@@ -21,14 +22,36 @@
 
 
 <!-- CABECERA Y MENÚ -->
-<header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="index.html#sobre-mi">Sobre mí</a>
-        <a href="index.html#me-gusta">Me gusta</a>
-        <a href="contacto.html" class="activo">Contacto</a>
-    </nav>
+
+<!-- CABECERA: presentación principal de la web -->
+
+<header id="inicio">
+    <div>
+        <h1>Gracia <span class="apellidos">Tortajada Ferris</span></h1>
+
+
+    <p>
+        Si tienes miedo, hazlo con miedo.
+    </p>
+
+    <p>
+        Estudiante de Desarrollo de Aplicaciones Multiplataforma,
+        descubriendo el mundo de la programación.
+    </p>
+
+    <a href="index.html">Inicio</a>
+    <a href="index.html#proyectos">Ver proyectos</a>
+    <a href="contacto.html" class="activo">Contactar</a>
+
+    <!-- Botón para cambiar entre modo claro y modo oscuro -->
+    <button id="boton-tema" type="button">☾ Modo oscuro</button>
+
+</div>
+
+
 </header>
+
+
 
 
 <!-- CONTENIDO PRINCIPAL -->
@@ -49,7 +72,9 @@
     <!-- FORMULARIO -->
     <section class="contacto-formulario">
 
-        <form id="formulario-contacto">
+       <form id="formulario-contacto"
+      action="https://formspree.io/f/xqpavzoq"
+      method="POST">
 
             <div class="campo-formulario">
                 <label for="nombre">Nombre *</label>
@@ -58,7 +83,8 @@
                     id="nombre"
                     name="nombre"
                     placeholder="Tu nombre"
-                    required>
+                    required
+                    data-fs-field>
             </div>
 
 
@@ -69,7 +95,8 @@
                     id="email"
                     name="email"
                     placeholder="tu@email.com"
-                    required>
+                    required
+                    data-fs-field>
             </div>
 
 
@@ -79,7 +106,8 @@
                     type="tel"
                     id="telefono"
                     name="telefono"
-                    placeholder="Tu teléfono">
+                    placeholder="Tu teléfono"
+                    data-fs-field>
             </div>
 
 
@@ -90,51 +118,55 @@
                     name="mensaje"
                     rows="6"
                     placeholder="Cuéntame en qué puedo ayudarte..."
-                    required></textarea>
+                    required
+                    data-fs-field></textarea>
             </div>
 
 
-            <button type="submit" class="boton-contacto">
+            <button type="submit" class="boton-contacto" data-fs-submit-btn>
                 Enviar mensaje
             </button>
 
         </form>
 
-    </section>
+        <div data-fs-success>
+    ¡Mensaje enviado correctamente! Gracias por escribirme.
+</div>
 
-
-    <!-- OTRAS FORMAS DE CONTACTO -->
-    <section class="otras-formas-contacto">
-
-        <p>También puedes encontrarme aquí:</p>
-
-        <div class="enlaces-contacto">
-
-            <a href="mailto:graciatortajadaferris@gmail.com">
-                Correo
-            </a>
-
-            <a href="https://github.com/GraciaTF"
-               target="_blank"
-               rel="noopener noreferrer">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/gracia-tortajada-48872050/"
-               target="_blank"
-               rel="noopener noreferrer">
-                LinkedIn
-            </a>
-
-        </div>
+<div data-fs-error></div>
 
     </section>
+
+
+   
 
 </main>
 
 
 <!-- PIE DE PÁGINA -->
-<footer>
+<footer id="contacto">
+
+    <h2>También puedes encontrarme aquí:</h2>
+
+    <div class="iconos-contacto">
+    <a href="mailto:graciatortajadaferris@gmail.com" class="icono-contacto" aria-label="Enviar correo">
+
+    <img src="images/correorosa.png" alt="Correo electrónico">
+
+    </a>
+
+    <a href="https://github.com/GraciaTF" class="icono-contacto" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gracia">
+
+    <img src="images/githubrosa.png" alt="GitHub">
+
+    </a>
+
+    <a href="https://www.linkedin.com/in/gracia-tortajada-48872050/" class="icono-contacto" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gracia">
+
+    <img src="images/linkedinrosa.png" alt="LinkedIn">
+
+    </a>
+    </div>
 
     <p>
         Gracia · 2026
@@ -142,7 +174,21 @@
 
 </footer>
 
+<script src="script.js"></script>
+<script>
+    window.formspree =
+        window.formspree ||
+        function () {
+            (formspree.q = formspree.q || []).push(arguments);
+        };
 
+    formspree("initForm", {
+        formElement: "#formulario-contacto",
+        formId: "xqpavzoq"
+    });
+</script>
+
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 
 </html>

@@ -346,6 +346,8 @@ text-align: center;
 
 footer h2 {
 color: var(--blanco);
+font-size: 1.6em;
+font-style: italic;
 }
 
 footer p {
@@ -730,6 +732,14 @@ color: var(--fucsia);
 }
 
 
+/* =========================
+HEADER - PÁGINA DE CONTACTO
+========================= */
+
+/* Contacto queda marcado como sección activa */
+header nav a.activo {
+color: var(--fucsia);
+}
 
 /* =========================
 PÁGINA DE CONTACTO
@@ -773,6 +783,7 @@ margin-bottom: 1.5rem;
 display: block;
 margin-bottom: 0.5rem;
 font-weight: bold;
+color: var(--blanco);
 }
 
 .campo-formulario label span {
@@ -789,7 +800,7 @@ padding: 0.8rem;
 border: 1px solid var(--gris);
 border-radius: 8px;
 background-color: var(--blanco);
-color: var(--negro);
+color: var(--fucsia);
 font-family: inherit;
 font-size: 1rem;
 }
@@ -797,8 +808,6 @@ font-size: 1rem;
 .campo-formulario textarea {
 resize: vertical;
 }
-
-/* EFECTO AL SELECCIONAR UN CAMPO */
 
 .campo-formulario input:focus,
 .campo-formulario textarea:focus {
@@ -869,4 +878,40 @@ text-decoration: underline;
 }
 
 
+}
+
+.campo-formulario input::placeholder,
+.campo-formulario textarea::placeholder {
+color: var(--gris);
+opacity: 1;
+}
+
+/* 
+ENLACE CONTACTO activo  */
+/* Enlace de la página actual */
+header a.activo {
+color: var(--fucsia);
+}
+
+
+[data-fs-success] {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--fucsia) !important;
+    background: transparent !important;
+    background-color: rgb(238, 193, 200) !important;
+    border: 1px solid var(--fucsia);
+    border-radius: 8px;
+}
+
+[data-fs-success],
+[data-fs-success] * {
+    color: var(--fucsia) !important;
+}
+
+[data-fs-error] {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--fucsia);
 }
