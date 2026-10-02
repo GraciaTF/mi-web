@@ -1205,3 +1205,22 @@ HABILIDADES EN MÓVIL
 #cerrar-imagen:hover {
     color: var(--fucsia);
 }
+/* VIDEO */
+.video-proyecto {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+}
+
+.video-proyecto h4 {
+    color: var(--fucsia);
+    margin-bottom: 1rem;
+}
+
+.video-proyecto video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid var(--rosa-suave);
+}

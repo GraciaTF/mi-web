@@ -53,6 +53,10 @@ MEJORAS SEGÚN RÚBRICA:
 
 -He añadido capturas de mis proyectos en la página de proyectos. He añadido código al script.js para conseguir que al hacer click en cada imagen se amplíe.
 
+-He creado un favicon y lo he añadido a mis páginas para identificar rápidamente mi web en las pestañas del navegador.
+
+-He creado un pequeño vídeo sobre el proyecto actual de mi web y lo he colgado en el apartado correspondiente de proyectos.
+
 
 
 --FIN SESIÓN 1 Y 2--
