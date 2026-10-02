@@ -729,3 +729,144 @@ pointer-events: none;
 color: var(--fucsia);
 }
 
+
+
+/* =========================
+PÁGINA DE CONTACTO
+========================= */
+
+.pagina-contacto {
+max-width: 800px;
+margin: 0 auto;
+padding: 4rem 2rem;
+}
+
+.contacto-intro {
+text-align: center;
+margin-bottom: 3rem;
+}
+
+.contacto-intro h1 {
+color: var(--fucsia);
+margin-bottom: 1rem;
+}
+
+.contacto-intro p {
+max-width: 600px;
+margin: 0 auto;
+line-height: 1.7;
+}
+
+/* FORMULARIO */
+
+.contacto-formulario {
+background-color: var(--negro-lila);
+padding: 2rem;
+border-radius: 15px;
+}
+
+.campo-formulario {
+margin-bottom: 1.5rem;
+}
+
+.campo-formulario label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: bold;
+}
+
+.campo-formulario label span {
+font-weight: normal;
+font-size: 0.9rem;
+color: var(--gris);
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+width: 100%;
+box-sizing: border-box;
+padding: 0.8rem;
+border: 1px solid var(--gris);
+border-radius: 8px;
+background-color: var(--blanco);
+color: var(--negro);
+font-family: inherit;
+font-size: 1rem;
+}
+
+.campo-formulario textarea {
+resize: vertical;
+}
+
+/* EFECTO AL SELECCIONAR UN CAMPO */
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+outline: 2px solid var(--fucsia);
+border-color: var(--fucsia);
+}
+
+/* BOTÓN */
+
+.boton-contacto {
+display: block;
+margin: 0 auto;
+padding: 0.8rem 1.8rem;
+border: 2px solid var(--fucsia);
+border-radius: 8px;
+background-color: transparent;
+color: var(--fucsia);
+font-family: inherit;
+font-size: 1rem;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.boton-contacto:hover {
+background-color: var(--fucsia);
+color: var(--blanco);
+}
+
+/* OTROS MEDIOS DE CONTACTO */
+
+.otras-formas-contacto {
+text-align: center;
+margin-top: 3rem;
+}
+
+.enlaces-contacto {
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin-top: 1rem;
+}
+
+.enlaces-contacto a {
+color: var(--fucsia);
+text-decoration: none;
+}
+
+.enlaces-contacto a:hover {
+text-decoration: underline;
+}
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+
+.pagina-contacto {
+    padding: 3rem 1rem;
+}
+
+.contacto-formulario {
+    padding: 1.5rem;
+}
+
+.enlaces-contacto {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+}
