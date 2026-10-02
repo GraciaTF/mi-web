@@ -57,6 +57,8 @@ MEJORAS SEGÚN RÚBRICA:
 
 -He creado un pequeño vídeo sobre el proyecto actual de mi web y lo he colgado en el apartado correspondiente de proyectos.
 
+-Después, he creado tres svg apropiados para de mis proyectos y los he colocado junto con las capturas.
+
 
 
 --FIN SESIÓN 1 Y 2--

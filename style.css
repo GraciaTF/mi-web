@@ -1224,3 +1224,9 @@ HABILIDADES EN MÓVIL
     border-radius: 10px;
     border: 1px solid var(--rosa-suave);
 }
+
+.medios-proyecto > img[src*="svg"] {
+    width: 200px;
+    justify-self: center;
+    grid-column: 1 / -1;
+}

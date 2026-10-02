@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 300 180">
+
+    <rect x="10"
+          y="10"
+          width="280"
+          height="160"
+          rx="15"
+          fill="#FFF9FC"
+          stroke="#ff4fc3"
+          stroke-width="3"/>
+
+    <path d="M70 55
+             Q105 45 140 55
+             L140 130
+             Q105 120 70 130
+             Z"
+          fill="none"
+          stroke="#ff4fc3"
+          stroke-width="5"/>
+
+    <path d="M140 55
+             Q175 45 210 55
+             L210 130
+             Q175 120 140 130
+             Z"
+          fill="none"
+          stroke="#ff4fc3"
+          stroke-width="5"/>
+
+    <text x="140"
+          y="105"
+          text-anchor="middle"
+          font-size="28"
+          font-family="monospace"
+          font-weight="bold"
+          fill="#ff4fc3">
+        Java
+    </text>
+
+</svg>

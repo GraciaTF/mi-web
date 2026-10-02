@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 300 180">
+
+    <!-- Fondo -->
+
+    <rect x="10"
+          y="10"
+          width="280"
+          height="160"
+          rx="15"
+          fill="#FFF9FC"
+          stroke="#ff4fc3"
+          stroke-width="3"/>
+
+
+    <!-- Estrella -->
+
+    <path d="M150 35
+             L155 48
+             L169 48
+             L158 57
+             L162 71
+             L150 63
+             L138 71
+             L142 57
+             L131 48
+             L145 48
+             Z"
+          fill="#ff4fc3"/>
+
+
+    <!-- Árbol -->
+
+    <path d="M150 55
+             L115 95
+             L130 95
+             L105 125
+             L130 125
+             L100 150
+             L200 150
+             L170 125
+             L195 125
+             L170 95
+             L185 95
+             Z"
+          fill="none"
+          stroke="#ff4fc3"
+          stroke-width="4"
+          stroke-linejoin="round"/>
+
+
+    <!-- Tronco -->
+
+    <rect x="140"
+          y="150"
+          width="20"
+          height="10"
+          fill="#ff4fc3"/>
+
+
+    <!-- Pequeños detalles -->
+
+    <circle cx="125"
+            cy="110"
+            r="3"
+            fill="#ff4fc3"/>
+
+    <circle cx="175"
+            cy="110"
+            r="3"
+            fill="#ff4fc3"/>
+
+</svg>
