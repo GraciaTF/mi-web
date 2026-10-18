@@ -1242,3 +1242,222 @@ ESTILO ERROR EMAIL */
 #email[aria-invalid="true"] {
     border-color: #d93025;
 }
+
+
+/* =========================================================
+   WIDGET METEOROLÓGICO
+   ========================================================= */
+
+#seccion-meteo {
+    padding: 3rem;
+    margin: 3rem 0;
+    border: 1px solid var(--rosa-suave);
+    border-radius: 16px;
+    background-color: #FFF9FC;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#seccion-meteo:hover {
+    border-color: var(--fucsia);
+    box-shadow: 0 10px 30px rgba(255, 79, 195, 0.10);
+}
+
+#seccion-meteo h2 {
+    margin-bottom: 1rem;
+}
+
+#seccion-meteo > p {
+    line-height: 1.7;
+}
+
+#seccion-meteo form {
+    margin-top: 1.5rem;
+}
+
+#seccion-meteo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#seccion-meteo .busqueda-meteo {
+    display: flex;
+    gap: 0.75rem;
+}
+
+#seccion-meteo input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    background-color: var(--blanco);
+    color: var(--negro-lila);
+    font: inherit;
+}
+
+#seccion-meteo input:focus {
+    outline: 2px solid var(--fucsia);
+    border-color: var(--fucsia);
+}
+
+#seccion-meteo button {
+    padding: 0.8rem 1.4rem;
+    border: 1px solid var(--fucsia);
+    border-radius: 8px;
+    background-color: var(--fucsia);
+    color: var(--negro-lila);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+#seccion-meteo button:hover {
+    background-color: var(--negro-lila);
+    color: var(--blanco);
+    transform: translateY(-2px);
+}
+
+#seccion-meteo button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+#estado-meteo {
+    margin-top: 1rem;
+    color: var(--negro-lila);
+    font-size: 0.95rem;
+}
+
+#resultado-meteo {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--rosa-suave);
+    border-radius: 12px;
+    background-color: var(--blanco);
+}
+
+#resultado-meteo[hidden] {
+    display: none;
+}
+
+#nombre-ciudad-meteo {
+    color: var(--negro-lila);
+    margin-bottom: 1rem;
+}
+
+#seccion-meteo .temperatura-meteo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#icono-meteo {
+    font-size: 3rem;
+}
+
+#temperatura-meteo {
+    color: var(--fucsia);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#descripcion-meteo {
+    text-align: center;
+    font-weight: bold;
+}
+
+#seccion-meteo .datos-meteo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#seccion-meteo .datos-meteo p {
+    margin: 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background-color: #FFF9FC;
+    overflow-wrap: anywhere;
+}
+
+#seccion-meteo .datos-meteo strong {
+    display: block;
+    color: var(--fucsia);
+}
+
+#seccion-meteo .credito-meteo {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+#seccion-meteo .credito-meteo a {
+    color: var(--fucsia);
+}
+
+/* MODO OSCURO */
+
+body.modo-oscuro #seccion-meteo {
+    background-color: #211E2D;
+    border-color: #4A3A4B;
+}
+
+body.modo-oscuro #seccion-meteo:hover {
+    border-color: var(--fucsia);
+}
+
+body.modo-oscuro #seccion-meteo #estado-meteo,
+body.modo-oscuro #seccion-meteo label {
+    color: var(--blanco);
+}
+
+body.modo-oscuro #seccion-meteo input {
+    background-color: var(--negro-lila);
+    color: var(--blanco);
+    border-color: #725064;
+}
+
+body.modo-oscuro #resultado-meteo {
+    background-color: var(--negro-lila);
+    border-color: #4A3A4B;
+}
+
+body.modo-oscuro #nombre-ciudad-meteo {
+    color: var(--blanco);
+}
+
+body.modo-oscuro #seccion-meteo .datos-meteo p {
+    background-color: #2A2030;
+    color: var(--blanco);
+}
+
+/* MÓVILES */
+
+@media (max-width: 600px) {
+    #seccion-meteo {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    #seccion-meteo .busqueda-meteo {
+        flex-direction: column;
+    }
+
+    #seccion-meteo button {
+        width: 100%;
+    }
+
+    #seccion-meteo .datos-meteo {
+        grid-template-columns: 1fr;
+    }
+}

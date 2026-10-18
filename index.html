@@ -331,6 +331,64 @@
         </article>
     </section>
 
+    
+<!-- WIDGET DEL TIEMPO -->
+<section id="seccion-meteo" class="seccion-meteo">
+    <h2>¿Qué tiempo hace?</h2>
+    <p>Consulta el tiempo actual de cualquier ciudad.</p>
+
+    <form id="formulario-meteo">
+        <label for="ciudad-meteo">Ciudad</label>
+
+        <div class="busqueda-meteo">
+            <input
+                type="text"
+                id="ciudad-meteo"
+                placeholder="Ej. Valencia"
+                value="Valencia"
+                required
+            >
+
+            <button type="submit" id="boton-meteo">
+                Consultar
+            </button>
+        </div>
+    </form>
+
+    <p id="estado-meteo" role="status" aria-live="polite"></p>
+
+    <div id="resultado-meteo" class="resultado-meteo" hidden>
+        <h3 id="nombre-ciudad-meteo"></h3>
+
+        <div class="temperatura-meteo">
+            <span id="icono-meteo" aria-hidden="true">🌤️</span>
+            <p><strong id="temperatura-meteo"></strong></p>
+        </div>
+
+        <p id="descripcion-meteo"></p>
+
+        <div class="datos-meteo">
+            <p>Sensación térmica:
+                <strong id="sensacion-meteo"></strong>
+            </p>
+            <p>Humedad:
+                <strong id="humedad-meteo"></strong>
+            </p>
+            <p>Viento:
+                <strong id="viento-meteo"></strong>
+            </p>
+        </div>
+    </div>
+
+    <p class="credito-meteo">
+        Datos meteorológicos:
+        <a href="https://open-meteo.com/"
+           target="_blank"
+           rel="noopener noreferrer">Open-Meteo</a>
+    </p>
+</section>
+
+
 </main>
 
 
