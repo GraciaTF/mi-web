@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¿Qué personaje de rol serías? | Gracia</title>
+
+    <link rel="icon" type="image/icon" href="images/favicon.ico">
+
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test-rol.css">
+</head>
+
+<body>
+
+    <a href="#inicio" class="boton-arriba" aria-label="Volver al inicio">
+        <img src="images/flecharosa.png" alt="Volver al inicio">
+    </a>
+
+    <canvas id="particulas"></canvas>
+
+    <!-- CABECERA -->
+    <header id="inicio">
+        <div>
+
+            <h1>Gracia <span class="apellidos">Tortajada Ferris</span></h1>
+
+            <p>Si tienes miedo, hazlo con miedo.</p>
+
+            <p>
+                Estudiante de Desarrollo de Aplicaciones Multiplataforma,
+                descubriendo el mundo de la programación.
+            </p>
+
+                
+            <a href="index.html">Inicio</a>
+            <a href="proyectos.html">Ver proyectos</a>
+            <a href="contacto.html">Contactar</a>
+            <a href="test-rol.html">¿Qué personaje de rol eres?</a>
+
+
+            <button id="boton-tema" type="button">
+                ☾ Modo oscuro
+            </button>
+
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="test-rol">
+
+        <section class="rol-intro">
+
+            <p class="rol-etiqueta">✦ Una aventura te espera ✦</p>
+
+            <h2>¿Qué personaje de rol serías?</h2>
+
+            <p>
+                El reino necesita héroes, pero no todos los héroes
+                empuñan una espada.
+
+                Responde a estas preguntas, sigue tu instinto y
+                descubre qué papel te espera en la próxima aventura.
+            </p>
+
+            <div class="rol-detalles">
+                <span>⚔ 7 preguntas</span>
+                <span>✧ 7 posibles roles</span>
+                <span>☘ Sin respuestas incorrectas</span>
+            </div>
+
+        </section>
+
+        <!-- TEST -->
+        <form id="formulario-test-rol">
+
+            <!-- PREGUNTA 1 -->
+            <fieldset class="pregunta-rol">
+
+                <legend>
+                    <span class="numero-pregunta">01</span>
+                    Llegas a una taberna y escuchas rumores sobre
+                    una antigua ruina. ¿Qué te llama la atención?
+                </legend>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p1"
+                           value="exploradora" required>
+                    Un mapa incompleto que promete territorios desconocidos.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p1" value="sabia">
+                    Una inscripción antigua que nadie ha conseguido descifrar.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p1" value="estratega">
+                    Averiguar quién busca la ruina y por qué.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p1" value="inventora">
+                    Un extraño mecanismo que protege la entrada.
+                </label>
+
+            </fieldset>
+
+            <!-- PREGUNTA 2 -->
+            <fieldset class="pregunta-rol">
+
+                <legend>
+                    <span class="numero-pregunta">02</span>
+                    Una criatura enorme bloquea el puente.
+                    ¿Cuál es tu primera reacción?
+                </legend>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p2" value="guerrera" required>
+                    Me preparo para proteger al grupo.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p2" value="sanadora">
+                    Intento calmar la situación y mantener a todos a salvo.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p2" value="hechicera">
+                    Busco una forma ingeniosa de usar la magia.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p2" value="estratega">
+                    Observo a la criatura y preparo un plan.
+                </label>
+
+            </fieldset>
+
+            <!-- PREGUNTA 3 -->
+            <fieldset class="pregunta-rol">
+
+                <legend>
+                    <span class="numero-pregunta">03</span>
+                    En una mazmorra encontráis una puerta sellada.
+                    ¿Cómo intentas abrirla?
+                </legend>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p3" value="sabia" required>
+                    Estudio los símbolos y la historia del lugar.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p3" value="inventora">
+                    Examino la cerradura y su mecanismo.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p3" value="hechicera">
+                    Pruebo un conjuro que quizá funcione.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p3" value="exploradora">
+                    Busco una entrada alternativa.
+                </label>
+
+            </fieldset>
+
+            <!-- PREGUNTA 4 -->
+            <fieldset class="pregunta-rol">
+
+                <legend>
+                    <span class="numero-pregunta">04</span>
+                    Una compañera cae herida durante el combate.
+                    ¿Qué haces?
+                </legend>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p4" value="sanadora" required>
+                    Voy a ayudarla para que pueda recuperarse.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p4" value="guerrera">
+                    Me interpongo para protegerla.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p4" value="estratega">
+                    Reorganizo al grupo para controlar el combate.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p4" value="hechicera">
+                    Improviso un hechizo para sacarnos del apuro.
+                </label>
+
+            </fieldset>
+
+            <!-- PREGUNTA 5 -->
+            <fieldset class="pregunta-rol">
+
+                <legend>
+                    <span class="numero-pregunta">05</span>
+                    Puedes llevar un único objeto mágico en tu viaje.
+                    ¿Cuál eliges?
+                </legend>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p5" value="exploradora" required>
+                    Una brújula que señala lo que todavía desconozco.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p5" value="sanadora">
+                    Un relicario capaz de aliviar el dolor.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p5" value="inventora">
+                    Una herramienta mágica que se transforma.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p5" value="sabia">
+                    Un libro que responde preguntas misteriosas.
+                </label>
+
+            </fieldset>
+
+            <!-- PREGUNTA 6 -->
+            <fieldset class="pregunta-rol">
+
+                <legend>
+                    <span class="numero-pregunta">06</span>
+                    El grupo no se pone de acuerdo sobre cómo continuar.
+                    ¿Qué aportas tú?
+                </legend>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p6" value="estratega" required>
+                    Analizo las opciones y propongo un plan.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p6" value="sanadora">
+                    Escucho a todo el mundo e intento unir al grupo.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p6" value="guerrera">
+                    Tomo una decisión y doy el primer paso.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p6" value="exploradora">
+                    Propongo explorar un camino diferente.
+                </label>
+
+            </fieldset>
+
+            <!-- PREGUNTA 7 -->
+            <fieldset class="pregunta-rol">
+
+                <legend>
+                    <span class="numero-pregunta">07</span>
+                    Al terminar la aventura, ¿qué te gustaría que
+                    recordaran de ti?
+                </legend>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p7" value="hechicera" required>
+                    Convertí lo imposible en algo extraordinario.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p7" value="guerrera">
+                    Nunca abandoné a quienes confiaban en mí.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p7" value="sabia">
+                    Encontré respuestas que cambiaron el destino del reino.
+                </label>
+
+                <label class="opcion-rol">
+                    <input type="radio" name="p7" value="inventora">
+                    Creé algo que hizo posibles nuevas aventuras.
+                </label>
+
+            </fieldset>
+
+            <p id="aviso-test-rol" role="status" aria-live="polite"></p>
+
+            <div class="acciones-test-rol">
+
+                <button type="submit" class="boton-test-rol">
+                    Descubrir mi rol ✦
+                </button>
+
+                <button type="reset" class="boton-test-secundario">
+                    Empezar de nuevo
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- RESULTADO: JAVASCRIPT LO MOSTRARÁ AL TERMINAR -->
+        <section id="resultado-test-rol"
+                 class="resultado-test-rol"
+                 aria-live="polite"
+                 hidden>
+
+            <p class="rol-etiqueta">✦ Tu destino te espera ✦</p>
+
+            <p id="icono-resultado-rol"
+               class="icono-resultado-rol"
+               aria-hidden="true">✧</p>
+
+            <h2>Tu rol es...</h2>
+
+            <h3 id="nombre-resultado-rol"></h3>
+
+            <p id="descripcion-resultado-rol"></p>
+
+            <p id="frase-resultado-rol"
+               class="frase-resultado-rol"></p>
+
+            <button type="button"
+                    id="repetir-test-rol"
+                    class="boton-test-rol">
+                Volver a jugar ↻
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+
+        <h2>También puedes encontrarme aquí:</h2>
+
+        <div class="iconos-contacto">
+
+            <a href="mailto:graciatortajadaferris@gmail.com"
+               class="icono-contacto"
+               aria-label="Enviar correo">
+
+                <img src="images/correorosa.png"
+                     alt="Correo electrónico">
+
+            </a>
+
+            <a href="https://github.com/GraciaTF"
+               class="icono-contacto"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub de Gracia">
+
+                <img src="images/githubrosa.png"
+                     alt="GitHub">
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/gracia-tortajada-48872050/"
+               class="icono-contacto"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn de Gracia">
+
+                <img src="images/linkedinrosa.png"
+                     alt="LinkedIn">
+
+            </a>
+
+        </div>
+
+        <p>Gracia · 2026</p>
+
+    </footer>
+
+    <!-- JavaScript general de la web -->
+    <script src="script.js"></script>
+
+    <!-- JavaScript exclusivo del test -->
+    <script src="test-rol.js"></script>
+
+</body>
+</html>

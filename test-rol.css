@@ -1,0 +1,117 @@
+
+/* =========================================================
+   TEST DE ROL
+   Estilos específicos de esta página
+========================================================= */
+
+/* Contenedor principal del test */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Título y presentación del test */
+main h2 {
+    color: var(--negro-lila);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main > p {
+    max-width: 750px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    color: #555568;
+}
+
+/* Cada pregunta del test */
+#formulario-test-rol fieldset {
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+
+    border: 1px solid var(--rosa-suave);
+    border-left: 4px solid var(--fucsia);
+    border-radius: 16px;
+
+    background-color: #FFF8FC;
+}
+
+/* Texto de cada pregunta */
+#formulario-test-rol legend {
+    padding: 0 0.5rem;
+
+    color: var(--negro-lila);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Opciones de respuesta */
+#formulario-test-rol label {
+    display: block;
+    margin: 0.8rem 0;
+
+    padding: 0.7rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por una respuesta */
+#formulario-test-rol label:hover {
+    background-color: var(--rosa-suave);
+    border-color: var(--fucsia);
+}
+
+/* Botones del test */
+#formulario-test-rol button,
+#repetir-test-rol {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+
+    border: 1px solid var(--fucsia);
+    border-radius: 50px;
+
+    background-color: var(--fucsia);
+    color: var(--negro-lila);
+
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por los botones */
+#formulario-test-rol button:hover,
+#repetir-test-rol:hover {
+    background-color: var(--negro-lila);
+    color: var(--blanco);
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   TOQUES DE FANTASÍA
+========================================================= */
+
+
+/* =========================================================
+   ETIQUETAS DECORATIVAS DEL TEST
+========================================================= */
+
+.rol-etiqueta {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+
+    color: rgb(231, 185, 86);
+    text-align: center;
+}
