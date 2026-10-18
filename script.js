@@ -161,3 +161,53 @@ if (visorImagen && imagenAmpliada && cerrarImagen) {
     });
 
 }
+
+
+/* =========================================================
+   MENSAJE EMAIL NO VÁLIDO
+   ========================================================= */
+
+const formularioContacto = document.getElementById("formulario-contacto");
+const campoEmail = document.getElementById("email");
+const errorEmail = document.getElementById("error-email");
+
+if (formularioContacto && campoEmail && errorEmail) {
+
+    function validarEmail() {
+        const email = campoEmail.value.trim();
+
+        // Exige texto antes y después de la arroba,
+        // un punto y una extensión de al menos dos letras.
+        const emailValido =
+            /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(email);
+
+        if (email === "") {
+            errorEmail.textContent = "";
+            campoEmail.removeAttribute("aria-invalid");
+            return false;
+        }
+
+        if (!emailValido) {
+            errorEmail.textContent =
+                "Introduce un correo válido, por ejemplo nombre@gmail.com";
+            campoEmail.setAttribute("aria-invalid", "true");
+            return false;
+        }
+
+        errorEmail.textContent = "";
+        campoEmail.removeAttribute("aria-invalid");
+        return true;
+    }
+
+    campoEmail.addEventListener("input", validarEmail);
+    campoEmail.addEventListener("blur", validarEmail);
+
+    formularioContacto.addEventListener("submit", function (evento) {
+        if (!validarEmail()) {
+            evento.preventDefault();
+            errorEmail.textContent =
+                "No se puede enviar el formulario: revisa tu correo electrónico.";
+            campoEmail.focus();
+        }
+    });
+}

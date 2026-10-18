@@ -20,7 +20,12 @@
 </head>
 
 <body>
+   
+<a href="#inicio" class="boton-arriba" aria-label="Volver al inicio">
+    <img src="images/flecharosa.png" alt="Volver al inicio">
+</a>
 
+<canvas id="particulas"></canvas>
 
 <!-- CABECERA Y MENÚ -->
 
@@ -89,6 +94,7 @@
             </div>
 
 
+                
             <div class="campo-formulario">
                 <label for="email">Correo electrónico *</label>
                 <input
@@ -97,8 +103,12 @@
                     name="email"
                     placeholder="tu@email.com"
                     required
-                    data-fs-field>
+                    data-fs-field
+                    aria-describedby="error-email">
+
+                <small id="error-email" class="mensaje-error"></small>
             </div>
+
 
 
             <div class="campo-formulario">

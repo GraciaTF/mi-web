@@ -1230,3 +1230,15 @@ HABILIDADES EN MÓVIL
     justify-self: center;
     grid-column: 1 / -1;
 }
+/* 
+ESTILO ERROR EMAIL */
+.mensaje-error {
+    display: block;
+    color: #d93025;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+#email[aria-invalid="true"] {
+    border-color: #d93025;
+}
