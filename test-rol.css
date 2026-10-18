@@ -115,3 +115,110 @@ main > p {
     color: rgb(231, 185, 86);
     text-align: center;
 }
+
+
+/* MODO OSCURO */
+
+/* =========================================================
+   TEST DE ROL — MODO OSCURO
+========================================================= */
+
+body.modo-oscuro .test-rol {
+    color: #FFFFFF;
+}
+
+/* Título principal */
+body.modo-oscuro .test-rol .rol-intro h2 {
+    color: var(--rosa-suave);
+}
+
+/* Texto descriptivo de la introducción */
+body.modo-oscuro .test-rol .rol-intro > p:not(.rol-etiqueta) {
+    color: #E8E8EC;
+}
+
+/* Etiqueta decorativa: "Una aventura te espera" */
+body.modo-oscuro .test-rol .rol-etiqueta {
+    color: #E7B956;
+}
+
+/* Títulos de las preguntas */
+body.modo-oscuro #formulario-test-rol legend {
+    color: #FF8AD8;
+}
+
+/* Tarjetas de las preguntas */
+body.modo-oscuro #formulario-test-rol fieldset {
+    background-color: #292438;
+    border-color: #59415F;
+    border-left-color: var(--fucsia);
+}
+
+/* Texto de las opciones */
+body.modo-oscuro #formulario-test-rol label {
+    color: #F5F0F7;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/* Al pasar el ratón por una opción */
+body.modo-oscuro #formulario-test-rol label:hover {
+    background-color: #3B2B46;
+    border-color: var(--fucsia);
+}
+
+/* Texto de las preguntas y demás elementos */
+body.modo-oscuro #formulario-test-rol {
+    color: #F5F0F7;
+}
+
+/* Resultado del test */
+body.modo-oscuro #resultado-test-rol {
+    color: #F5F0F7;
+}
+
+/* Títulos del resultado */
+body.modo-oscuro #resultado-test-rol h2,
+body.modo-oscuro #resultado-test-rol h3 {
+    color: var(--rosa-suave);
+}
+
+/* Descripción del resultado */
+body.modo-oscuro #resultado-test-rol p {
+    color: #E8E8EC;
+}
+
+/* Mantener el color dorado de las etiquetas en modo oscuro */
+body.modo-oscuro .test-rol .rol-etiqueta {
+    color: #E7B956 !important;
+}
+
+
+/* =========================================
+   IMAGEN DEL PERSONAJE DEL TEST
+========================================= */
+
+#imagen-resultado-rol {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 1.5rem auto;
+
+    border-radius: 18px;
+    object-fit: contain;
+}
+#imagen-resultado-rol[hidden] {
+    display: none;
+}
+
+/* Centrar la frase del personaje */
+.frase-resultado-rol {
+    text-align: center;
+}
+
+/* Centrar el botón Volver a jugar */
+#repetir-test-rol {
+    display: block;
+    margin: 1.5rem auto;
+}

@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultado = document.getElementById("resultado-test-rol");
     const aviso = document.getElementById("aviso-test-rol");
     const botonRepetir = document.getElementById("repetir-test-rol");
+    const imagenResultado = document.getElementById("imagen-resultado-rol");
 
 
     // Comprobamos que estamos en la página del test
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         sabia: {
             nombre: "La Sabia",
+            imagen: "images/roles/sabia.png",
             
 
             descripcion:
@@ -41,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         guerrera: {
             nombre: "La Guerrera",
+            imagen: "images/roles/guerrera.png",
            
 
             descripcion:
@@ -56,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         sanadora: {
             nombre: "La Sanadora",
+               imagen: "images/roles/sanadora.png",
         
 
             descripcion:
@@ -71,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         exploradora: {
             nombre: "La Exploradora",
+               imagen: "images/roles/exploradora.png",
            
 
             descripcion:
@@ -86,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         inventora: {
             nombre: "La Inventora",
-        icono: "⚙️",
+           imagen: "images/roles/inventora.png",
 
             descripcion:
                 "Donde otras personas ven un obstáculo, tú ves piezas que " +
@@ -101,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         hechicera: {
             nombre: "La Hechicera",
+               imagen: "images/roles/hechicera.png",
       
 
             descripcion:
@@ -116,6 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         estratega: {
             nombre: "La Estratega",
+               imagen: "images/roles/estratega.png",
          
 
             descripcion:
@@ -211,6 +218,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // Obtenemos la información del rol ganador
 
         const perfil = roles[rolGanador];
+        // Preparamos la imagen del personaje ganador
+
+        imagenResultado.src = perfil.imagen;
+        imagenResultado.alt = perfil.nombre;
+        imagenResultado.hidden = false;
 
 
         // 7. Mostramos el resultado en el HTML
@@ -245,13 +257,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 8. Si se pulsa "Empezar de nuevo"
 
+  // 8. Si se pulsa "Empezar de nuevo"
+
     formulario.addEventListener("reset", () => {
 
         aviso.textContent = "";
         resultado.hidden = true;
 
-    });
+        // Ocultamos y limpiamos la imagen anterior
+        imagenResultado.hidden = true;
+        imagenResultado.removeAttribute("src");
+        imagenResultado.alt = "";
 
+    });
 
     // 9. Si se pulsa "Volver a jugar"
 
