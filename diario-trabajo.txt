@@ -62,3 +62,18 @@ MEJORAS SEGÚN RÚBRICA:
 
 
 --FIN SESIÓN 1 Y 2--
+
+
+SESIÓN 3:
+-Comprobando el formulario, observo que si el correo no es válido, no se envía el mensaje pero no aparece ninguna notificación que indique qué es lo que impide mandar el mensaje de contacto. Lo corrijo.
+
+-Aplico también las partículas en Contacto.html (que no salían).
+
+-Como API, se me ha ocurrido incluir una pequeña sección meteorológica, en la que se puede consultar por ciudades y conecta con Open-Meteo (con la estética de la página).
+
+-Después de consultar el tutorial: ¿Cómo funciona? Cuando el usuario escribe una ciudad, JavaScript realiza una petición a la API de búsqueda de Open-Meteo para obtener sus coordenadas geográficas. Después, utiliza esas coordenadas para consultar la API de previsión meteorológica. El servicio devuelve los datos en formato JSON y JavaScript extrae la información necesaria para mostrarla en la página HTML. 
+He comprobado el funcionamiento desde las herramientas de desarrollador de Chrome, en la pestaña Red. Las dos peticiones han devuelto el estado HTTP 200 y he podido ver los datos de la respuesta. Si el servicio no responde, la petición puede fallar. Por eso es importante  widget bloqueado en el estado de carga. Debo comprobar que mi implementación gestiona correctamente ese caso.
+En este caso, no he escrito yo el código, he usado la IA para que me indicase qué debía colocar en el js y he usado varias iteraciones para integrarlo en la estética de mi web.
+
+
+-He estado pensando cómo ampliar la web para que tuviese 4 páginas y se me ha ocurrido incluir un pequeño "juego" interactivo en el que el visitante de la web responde una serie de preguntas y según sus respuestas, se le asigna un rol para un juego.
