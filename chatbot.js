@@ -32,7 +32,6 @@ No se utiliza inteligencia artificial ni se generan respuestas.
     // =========================================================
 
     const RAMAS = {
-     
         "Qué estudio": "Desarrollo de aplicaciones multiplataforma",
         "Quien soy": "Soy BitXi, el chatbot de la web de Gracia.",
         "Quien es Gracia": "Gracia es estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) en modalidad semipresencial.",
@@ -53,150 +52,151 @@ No se utiliza inteligencia artificial ni se generan respuestas.
     // Se pueden ampliar sin modificar las respuestas de RAMAS.
     // =========================================================
 
-const PALABRAS_CLAVE = {
-    "Quien soy": [
-        "quien eres",
-        "quien eres tu",
-        "quien es bitxi",
-        "que eres",
-        "que es bitxi",
-        "eres un chatbot",
-        "eres un bot",
-        "presentate"
-    ],
+    const PALABRAS_CLAVE = {
+        "Quien soy": [
+            "quien eres",
+            "quien eres tu",
+            "quien es bitxi",
+            "que eres",
+            "que es bitxi",
+            "eres un chatbot",
+            "eres un bot",
+            "presentate"
+        ],
 
-    "Quien es Gracia": [
-        "quien es gracia",
-        "quien es gracía",
-        "hablame de gracia",
-        "cuentame sobre gracia",
-        "quien es la propietaria",
-        "quien es la creadora",
-        "quien es la dueña"
-    ],
+        "Quien es Gracia": [
+            "quien es gracia",
+            "quien es gracía",
+            "hablame de gracia",
+            "cuentame sobre gracia",
+            "quien es la propietaria",
+            "quien es la creadora",
+            "quien es la dueña"
+        ],
 
-    "Qué estudio": [
-        "que estudio",
-        "que estudia gracia",
-        "que estas estudiando",
-        "que estudias",
-        "estudios",
-        "dam",
-        "desarrollo de aplicaciones multiplataforma",
-        "ciclo",
-        "modulo",
-        "grado"
-    ],
-    "Despedida": [
-    "adios",
-    "hasta luego",
-    "hasta pronto",
-    "nos vemos",
-    "me voy",
-    "chao",
-    "ciao",
-    "bye"
-],
+        "Qué estudio": [
+            "que estudio",
+            "que estudia gracia",
+            "que estas estudiando",
+            "que estudias",
+            "estudios",
+            "dam",
+            "desarrollo de aplicaciones multiplataforma",
+            "ciclo",
+            "modulo",
+            "grado"
+        ],
 
-"Gracias": [
-    "gracias",
-    "muchas gracias",
-    "te lo agradezco",
-    "agradecido",
-    "agradecida"
-],
+        "Despedida": [
+            "adios",
+            "hasta luego",
+            "hasta pronto",
+            "nos vemos",
+            "me voy",
+            "chao",
+            "ciao",
+            "bye"
+        ],
 
-    "Contacto": [
-        "contacto",
-        "contactar",
-        "correo",
-        "email",
-        "escribir",
-        "mensaje",
-        "formulario"
-    ],
+        "Gracias": [
+            "gracias",
+            "muchas gracias",
+            "te lo agradezco",
+            "agradecido",
+            "agradecida"
+        ],
 
-    "Aficiones": [
-        "aficion",
-        "aficiones",
-        "leer",
-        "lectura",
-        "libros",
-        "pasatiempo",
-        "pasatiempos"
-    ],
+        "Contacto": [
+            "contacto",
+            "contactar",
+            "correo",
+            "email",
+            "escribir",
+            "mensaje",
+            "formulario"
+        ],
 
-    "Gustos": [
-        "gusta",
-        "gustos",
-        "preferencias",
-        "tiempo libre",
-        "rol",
-        "roles",
-        "juegos",
-        "hobby",
-        "hobbies"
-    ],
+        "Aficiones": [
+            "aficion",
+            "aficiones",
+            "leer",
+            "lectura",
+            "libros",
+            "pasatiempo",
+            "pasatiempos"
+        ],
 
-    "Sabe": [
-        "que sabe gracia",
-        "que sabes",
-        "conocimientos",
-        "aprendido",
-        "experiencia",
-        "html",
-        "css",
-        "java",
-        "javascript",
-        "js",
-        "sql",
-        "git",
-        "programacion",
-        "tecnologias"
-    ],
+        "Gustos": [
+            "gusta",
+            "gustos",
+            "preferencias",
+            "tiempo libre",
+            "rol",
+            "roles",
+            "juegos",
+            "hobby",
+            "hobbies"
+        ],
 
-    "Aprendiendo": [
-        "que esta aprendiendo",
-        "que aprende gracia",
-        "aprendiendo",
-        "aprender",
-        "odoo",
-        "cplusplus",
-        "c++",
-        "qt",
-        "inteligencia artificial",
-        "ia",
-        "actualmente"
-    ],
+        "Sabe": [
+            "que sabe gracia",
+            "que sabes",
+            "conocimientos",
+            "aprendido",
+            "experiencia",
+            "html",
+            "css",
+            "java",
+            "javascript",
+            "js",
+            "sql",
+            "git",
+            "programacion",
+            "tecnologias"
+        ],
 
-    "Horario": [
-        "horario",
-        "horarios",
-        "disponibilidad",
-        "cuando",
-        "hora",
-        "horas"
-    ],
+        "Aprendiendo": [
+            "que esta aprendiendo",
+            "que aprende gracia",
+            "aprendiendo",
+            "aprender",
+            "odoo",
+            "cplusplus",
+            "c++",
+            "qt",
+            "inteligencia artificial",
+            "ia",
+            "actualmente"
+        ],
 
-    "Presupuesto": [
-        "presupuesto",
-        "precio",
-        "precios",
-        "coste",
-        "costo",
-        "tarifa",
-        "tarifas",
-        "cuanto cuesta"
-    ],
+        "Horario": [
+            "horario",
+            "horarios",
+            "disponibilidad",
+            "cuando",
+            "hora",
+            "horas"
+        ],
 
-    "Ayuda": [
-        "ayuda",
-        "ayudar",
-        "consulta",
-        "consultar",
-        "informacion"
-    ]
-};
+        "Presupuesto": [
+            "presupuesto",
+            "precio",
+            "precios",
+            "coste",
+            "costo",
+            "tarifa",
+            "tarifas",
+            "cuanto cuesta"
+        ],
+
+        "Ayuda": [
+            "ayuda",
+            "ayudar",
+            "consulta",
+            "consultar",
+            "informacion"
+        ]
+    };
 
     // =========================================================
     // CONFIGURACIÓN VISUAL
@@ -219,6 +219,9 @@ const PALABRAS_CLAVE = {
 
     const TIEMPO_MAXIMO = 20000;
     const TIEMPO_ESCRITURA = 400;
+
+    // NUEVO: clave de localStorage para no repetir el saludo inicial.
+    const CLAVE_SALUDO_INICIAL = "bitxi_saludo_inicial_mostrado";
 
     // Evita duplicar el chatbot si se carga el archivo dos veces.
     if (document.getElementById("bitxi-chatbot")) {
@@ -294,7 +297,7 @@ const PALABRAS_CLAVE = {
         /* Panel del chat. */
         #bitxi-panel {
             position: fixed;
-                top: auto;
+            top: auto;
             margin-top: 0 !important;
             right: 24px;
             bottom: 96px;
@@ -319,25 +322,23 @@ const PALABRAS_CLAVE = {
             display: none;
         }
 
-       
-/* Cabecera de BitXi, con altura controlada. */
-#bitxi-chatbot #bitxi-panel > .bitxi-cabecera {
-    display: flex;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding: 8px 16px;
-    background: var(--bitxi-fucsia);
-    gap: 10px;
-        min-height: 0 !important;
-    height: auto !important;
-    margin-block: 0 !important;
-    padding-block: 8px !important;
-}
-
+        /* Cabecera de BitXi, con altura controlada. */
+        #bitxi-chatbot #bitxi-panel > .bitxi-cabecera {
+            display: flex;
+            flex: 0 0 auto;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0;
+            padding: 8px 16px;
+            background: var(--bitxi-fucsia);
+            gap: 10px;
+            min-height: 0 !important;
+            height: auto !important;
+            margin-block: 0 !important;
+            padding-block: 8px !important;
+        }
 
         .bitxi-titulo {
             font-size: 18px;
@@ -511,7 +512,7 @@ const PALABRAS_CLAVE = {
         @media (max-width: 480px) {
             #bitxi-boton {
                 right: 28px;
-                bottom: 85px; 
+                bottom: 85px;
                 width: 56px;
                 height: 56px;
             }
@@ -601,7 +602,7 @@ const PALABRAS_CLAVE = {
             aria-modal="false"
             hidden
         >
-           <div class="bitxi-cabecera">
+            <div class="bitxi-cabecera">
                 <div>
                     <div class="bitxi-titulo">BitXi</div>
                     <div class="bitxi-subtitulo">
@@ -867,6 +868,28 @@ const PALABRAS_CLAVE = {
         botonAbrir.setAttribute("aria-expanded", "true");
         botonAbrir.setAttribute("aria-label", "Cerrar el chat de BitXi");
 
+        // NUEVO: saludo automático solo la primera vez que se abre.
+        // localStorage recuerda que el saludo ya se ha mostrado.
+        try {
+            if (localStorage.getItem(CLAVE_SALUDO_INICIAL) !== "true") {
+                agregarMensaje(
+                    "¡Hola! Soy BitXi, el asistente virtual de Gracia. " +
+                    "Puedes preguntarme qué estudia, qué sabe hacer o cómo contactar.",
+                    "bot"
+                );
+
+                localStorage.setItem(CLAVE_SALUDO_INICIAL, "true");
+            }
+        } catch (error) {
+            // NUEVO: si localStorage no está disponible, se muestra
+            // el saludo para que el visitante pueda usar el chatbot.
+            agregarMensaje(
+                "¡Hola! Soy BitXi, el asistente virtual de Gracia. " +
+                "Puedes preguntarme qué estudia, qué sabe hacer o cómo contactar.",
+                "bot"
+            );
+        }
+
         campoPregunta.focus();
     }
 
@@ -920,13 +943,8 @@ const PALABRAS_CLAVE = {
     });
 
     // =========================================================
-    // MENSAJE INICIAL
+    // NUEVO: EL SALUDO YA NO SE MUESTRA AL CARGAR LA PÁGINA.
+    // Ahora se muestra al abrir el chat por primera vez.
     // =========================================================
-
-    agregarMensaje(
-        "¡Hola! Soy BitXi, el asistente virtual de Gracia. " +
-        "Puedes preguntarme qué estudia, qué sabe hacer o cómo contactar.",
-        "bot"
-    );
 
 })();
