@@ -32,11 +32,15 @@ No se utiliza inteligencia artificial ni se generan respuestas.
     // =========================================================
 
     const RAMAS = {
-        "Quien soy": "Gracia es estudiante de DAM en modalidad semipresencial",
+     
         "Qué estudio": "Desarrollo de aplicaciones multiplataforma",
+        "Quien soy": "Soy BitXi, el chatbot de la web de Gracia.",
+        "Quien es Gracia": "Gracia es estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM) en modalidad semipresencial.",
         "Contacto": "Usa el formulario de contacto de la web",
         "Aficiones": "Le gusta leer",
         "Gustos": "Le gusta leer",
+        "Despedida": "¡Hasta luego! Gracias por visitar la web de Gracia. 😊",
+        "Gracias": "¡Encantado de ayudarte! 😊",
         "Sabe": "Gracia ha aprendido a utilizar HTML, CSS y Java entre otros",
         "Aprendiendo": "Odoo, C++, Qt y programación con IA",
         "Horario": "Usa el formulario de contacto de la web",
@@ -49,51 +53,150 @@ No se utiliza inteligencia artificial ni se generan respuestas.
     // Se pueden ampliar sin modificar las respuestas de RAMAS.
     // =========================================================
 
-    const PALABRAS_CLAVE = {
-        "Quien soy": [
-            "quien", "gracia", "estudiante", "dam",
-            "semipresencial", "presentacion", "presentarte"
-        ],
-        "Qué estudio": [
-            "estudio", "estudiar", "estudios", "formacion",
-            "desarrollo", "aplicaciones", "multiplataforma",
-            "ciclo", "modulo", "grado"
-        ],
-        "Contacto": [
-            "contacto", "contactar", "correo", "email",
-            "escribir", "mensaje", "formulario"
-        ],
-        "Aficiones": [
-            "aficion", "aficiones", "leer", "lectura",
-            "libros", "pasatiempo", "pasatiempos"
-        ],
-        "Gustos": [
-            "gusta", "gustos", "preferencias", "tiempo libre",
-            "rol", "roles", "juegos", "hobby", "hobbies"
-        ],
-        "Sabe": [
-            "sabe", "sabes", "conocimientos", "aprendido",
-            "experiencia", "html", "css", "java", "javascript",
-            "js", "sql", "git", "programacion", "tecnologias"
-        ],
-        "Aprendiendo": [
-            "aprendiendo", "aprende", "aprender", "odoo",
-            "cplusplus", "c++", "qt", "inteligencia",
-            "artificial", "ia", "actualmente"
-        ],
-        "Horario": [
-            "horario", "horarios", "disponibilidad",
-            "cuando", "hora", "horas"
-        ],
-        "Presupuesto": [
-            "presupuesto", "precio", "precios", "coste",
-            "costo", "tarifa", "tarifas", "cuanto", "cuesta"
-        ],
-        "Ayuda": [
-            "ayuda", "ayudar", "consulta", "consultar",
-            "informacion", "información"
-        ]
-    };
+const PALABRAS_CLAVE = {
+    "Quien soy": [
+        "quien eres",
+        "quien eres tu",
+        "quien es bitxi",
+        "que eres",
+        "que es bitxi",
+        "eres un chatbot",
+        "eres un bot",
+        "presentate"
+    ],
+
+    "Quien es Gracia": [
+        "quien es gracia",
+        "quien es gracía",
+        "hablame de gracia",
+        "cuentame sobre gracia",
+        "quien es la propietaria",
+        "quien es la creadora",
+        "quien es la dueña"
+    ],
+
+    "Qué estudio": [
+        "que estudio",
+        "que estudia gracia",
+        "que estas estudiando",
+        "que estudias",
+        "estudios",
+        "dam",
+        "desarrollo de aplicaciones multiplataforma",
+        "ciclo",
+        "modulo",
+        "grado"
+    ],
+    "Despedida": [
+    "adios",
+    "hasta luego",
+    "hasta pronto",
+    "nos vemos",
+    "me voy",
+    "chao",
+    "ciao",
+    "bye"
+],
+
+"Gracias": [
+    "gracias",
+    "muchas gracias",
+    "te lo agradezco",
+    "agradecido",
+    "agradecida"
+],
+
+    "Contacto": [
+        "contacto",
+        "contactar",
+        "correo",
+        "email",
+        "escribir",
+        "mensaje",
+        "formulario"
+    ],
+
+    "Aficiones": [
+        "aficion",
+        "aficiones",
+        "leer",
+        "lectura",
+        "libros",
+        "pasatiempo",
+        "pasatiempos"
+    ],
+
+    "Gustos": [
+        "gusta",
+        "gustos",
+        "preferencias",
+        "tiempo libre",
+        "rol",
+        "roles",
+        "juegos",
+        "hobby",
+        "hobbies"
+    ],
+
+    "Sabe": [
+        "que sabe gracia",
+        "que sabes",
+        "conocimientos",
+        "aprendido",
+        "experiencia",
+        "html",
+        "css",
+        "java",
+        "javascript",
+        "js",
+        "sql",
+        "git",
+        "programacion",
+        "tecnologias"
+    ],
+
+    "Aprendiendo": [
+        "que esta aprendiendo",
+        "que aprende gracia",
+        "aprendiendo",
+        "aprender",
+        "odoo",
+        "cplusplus",
+        "c++",
+        "qt",
+        "inteligencia artificial",
+        "ia",
+        "actualmente"
+    ],
+
+    "Horario": [
+        "horario",
+        "horarios",
+        "disponibilidad",
+        "cuando",
+        "hora",
+        "horas"
+    ],
+
+    "Presupuesto": [
+        "presupuesto",
+        "precio",
+        "precios",
+        "coste",
+        "costo",
+        "tarifa",
+        "tarifas",
+        "cuanto cuesta"
+    ],
+
+    "Ayuda": [
+        "ayuda",
+        "ayudar",
+        "consulta",
+        "consultar",
+        "informacion"
+    ]
+};
 
     // =========================================================
     // CONFIGURACIÓN VISUAL
